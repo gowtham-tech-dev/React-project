@@ -11,9 +11,17 @@ function App() {
   const decrease = () => {
     setCount(count - 1);
   };
-  
+
   const reset = () => {
     setCount(0);
+  };
+
+  const increseBy5 = () => {
+    setCount(count + 5);
+  };
+
+  const decreaseBy5 = () => {
+    setCount(count - 5);
   };
 
   return (
@@ -22,9 +30,12 @@ function App() {
 
       <h2>{count}</h2>
 
-      <button onClick={increase}>Increase</button>
+      <br />
+      <button onClick={decreaseBy5}>Decrease by 5</button>
       <button onClick={decrease}>Decrease</button>
       <button onClick={reset}>Reset</button>
+      <button onClick={increase}>Increase</button>
+      <button onClick={increseBy5}>Increase by 5</button>
 
     </div>
   );
